@@ -1,0 +1,74 @@
+.price {
+  text-align: center;
+}
+.price .content .box {
+  width: 30%;
+  padding: 30px;
+  border-radius: 20px 50px;
+
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(90, 146, 230, 0.4) 0%,
+      rgba(23, 23, 56, 0.2) 100%
+    );
+    box-shadow: 0, 0, 20px rgba(0, 0, 0, 0.5);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.price button {
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  transition: 0.3s ease-in-out;
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+  display: none;
+}
+.price h3 {
+  font-size: 22px;
+}
+.price h1 {
+  font-size: 60px;
+}
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.price ul {
+  margin-top: 40px;
+}
+.price ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.price .btn5 {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+  }
+
+  .price .content .box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}

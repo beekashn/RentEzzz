@@ -1,0 +1,20 @@
+.featured .box {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgb(75, 237, 237);
+  }
+  &:active {
+    transform: rotate(45deg) scale(0.7) translateY(-20px);
+  }
+}
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}

@@ -1,0 +1,163 @@
+.team .box {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 90%;
+  border: 1px solid rgba(7, 7, 7, 0.4);
+  padding: 2rem;
+  border-radius: 20px;
+  transition: 0.5s;
+  margin-top: 20px;
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.team .details {
+  text-align: center;
+  margin-top: 30px;
+}
+.team .img {
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  position: relative;
+  border-radius: 100px;
+}
+.recentImg {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-radius: 30px;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+.team img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.team .img i {
+  color: #108be7;
+  font-size: 17px;
+  position: absolute;
+  top: 35px;
+  right: -10px;
+}
+.team .img::after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 110px;
+  height: 110px;
+  border: 5px solid #edf0f5;
+  border-radius: 50%;
+}
+.team label {
+  display: inline-block;
+  margin-top: 20px;
+}
+.team i {
+  color: grey;
+  margin-right: 5px;
+  transition: 0.3s;
+  &:hover {
+    color: red;
+    transform: scale(1.2);
+  }
+}
+.team ul {
+  display: inline-block;
+  margin-top: 10px;
+}
+.team ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  align-items: center;
+  background-color: #f4f5f7;
+  border-radius: 50%;
+  margin: 5px;
+}
+.team .button {
+  margin-top: 20px;
+}
+.team .button i {
+  color: white;
+  font-size: 20px;
+}
+
+.teamMsgButton {
+  transition: 0.3s;
+  &:hover {
+    transform: scale(0.9);
+    background-color: #108be7;
+    color: white;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(253, 0, 0) !important;
+  background-color: rgba(218, 216, 216, 0.5) !important;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.slick-prev {
+  left: -4%;
+}
+
+.slick-next {
+  right: 0%;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(189, 189, 189, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+  .team .box {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(7, 7, 7, 0.5);
+  }
+
+  .slick-prev {
+    left: 0%;
+  }
+
+  .slick-next {
+    right: 0%;
+  }
+}
